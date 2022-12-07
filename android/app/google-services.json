@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "267790795234",
+    "firebase_url": "https://sincheol-flutter-project1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sincheol-flutter-project1",
+    "storage_bucket": "sincheol-flutter-project1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267790795234:android:459bd4198f058509ddb9bb",
+        "android_client_info": {
+          "package_name": "com.example.learningdart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267790795234-gjdqqod1p26dbdan1kasefehkdoagc8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1aZXWiF9lHY4hlcxhEnlb5AIEQNmlQhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267790795234-gjdqqod1p26dbdan1kasefehkdoagc8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "267790795234-p1bauj4gtueeqq9pd6hu0tlmh1tb0q99.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.learningdart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
