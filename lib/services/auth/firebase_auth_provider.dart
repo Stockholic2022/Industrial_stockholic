@@ -9,6 +9,13 @@ import 'package:firebase_auth/firebase_auth.dart'
 
 class FirebaseAuthProvider implements AuthProvider {
   @override
+  Future<void> initialize() async {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  }
+
+  @override
   Future<AuthUser> createUser({
     required String email,
     required String password,
@@ -22,7 +29,7 @@ class FirebaseAuthProvider implements AuthProvider {
       if (user != null) {
         return user;
       } else {
-        throw UserNotFoundAuthException();
+        throw UserNotLoggedInAuthException();
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
@@ -63,7 +70,7 @@ class FirebaseAuthProvider implements AuthProvider {
       if (user != null) {
         return user;
       } else {
-        throw UserNotFoundAuthException();
+        throw UserNotLoggedInAuthException();
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
@@ -73,7 +80,7 @@ class FirebaseAuthProvider implements AuthProvider {
       } else {
         throw GenericAuthException();
       }
-    } catch (e) {
+    } catch (_) {
       throw GenericAuthException();
     }
   }
@@ -96,12 +103,5 @@ class FirebaseAuthProvider implements AuthProvider {
     } else {
       throw UserNotLoggedInAuthException();
     }
-  }
-
-  @override
-  Future<void> initialize() async {
-    Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
   }
 }

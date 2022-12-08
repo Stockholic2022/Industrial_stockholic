@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learningdart/constants/routes.dart';
-import 'package:learningdart/services/auth/auth_serice.dart';
+import 'package:learningdart/services/auth/auth_service.dart';
 
 class VerifyEmailView extends StatefulWidget {
   const VerifyEmailView({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
       body: Column(
         children: [
           const Text(
-              "We've sent you an email verifiactation. Please open it to verify your account"),
+              "We've sent you an email verification. Please open it to verify your account."),
           const Text(
               "If you haven't received a verification email yet, press the button below"),
           TextButton(

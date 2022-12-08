@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learningdart/constants/routes.dart';
 import 'package:learningdart/services/auth/auth_exceptions.dart';
-import 'package:learningdart/services/auth/auth_serice.dart';
+import 'package:learningdart/services/auth/auth_service.dart';
 import 'package:learningdart/utilities/show_error_dialog.dart';
 
 class RegisterView extends StatefulWidget {
@@ -64,21 +64,20 @@ class _RegisterViewState extends State<RegisterView> {
                   email: email,
                   password: password,
                 );
-                final user = AuthService.firebase().currentUser;
                 AuthService.firebase().sendEmailVerification();
                 Navigator.of(context).pushNamed(verifyEmailRoute);
               } on WeakPasswordAuthException {
-                showErrorDialog(
+                await showErrorDialog(
                   context,
                   'Weak password',
                 );
               } on EmailAlreadyInUseAuthException {
-                showErrorDialog(
+                await showErrorDialog(
                   context,
                   'Email is already in use',
                 );
               } on InvalidEmailAuthException {
-                showErrorDialog(
+                await showErrorDialog(
                   context,
                   'This is an invalid email address',
                 );
