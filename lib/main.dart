@@ -9,22 +9,25 @@ import 'package:learningdart/views/verify_email_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(MaterialApp(
-    title: 'Flutter Demo',
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
+  runApp(
+    MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData( 
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomePage(),
+      routes: {
+        loginRoute: (context) => const LoginView(),
+        registerRoute: (context) => const RegisterView(),
+        notesRoute: (context) => const NotesView(),
+        verifyEmailRoute: (context) => const VerifyEmailView(),
+      },
     ),
-    home: const HomePage(),
-    routes: {
-      loginRoute: (context) => const LoginView(),
-      registerRoute: (context) => const RegisterView(),
-      notesRoute: (context) =>const NotesView(),
-    },
-  ));
+  );
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,10 +59,10 @@ class HomePage extends StatelessWidget {
 enum MenuAction { logout }
 
 class NotesView extends StatefulWidget {
-  const NotesView({super.key});
+  const NotesView({Key? key}) : super(key: key);
 
   @override
-  State<NotesView> createState() => _NotesViewState();
+  _NotesViewState createState() => _NotesViewState();
 }
 
 class _NotesViewState extends State<NotesView> {
@@ -71,26 +74,27 @@ class _NotesViewState extends State<NotesView> {
         actions: [
           PopupMenuButton<MenuAction>(
             onSelected: (value) async {
-            switch (value) {
-              case MenuAction.logout:
-                final shouldLogout = await showLogOutDialog(context);
-                if (shouldLogout) {
-                  await FirebaseAuth.instance.signOut();
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    loginRoute,
-                    (_) => false,
-                  );
-                }
-                break;
-            }
-          }, itemBuilder: (context) {
-            return [
-              const PopupMenuItem<MenuAction>(
-                value: MenuAction.logout,
-                child: Text('Log out'),
-              ),
-            ];
-          })
+              switch (value) {
+                case MenuAction.logout:
+                  final shouldLogout = await showLogOutDialog(context);
+                  if (shouldLogout) {
+                    await FirebaseAuth.instance.signOut();
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      loginRoute,
+                      (_) => false,
+                    );
+                  }
+              }
+            },
+            itemBuilder: (context) {
+              return const [
+                PopupMenuItem<MenuAction>(
+                  value: MenuAction.logout,
+                  child: Text('Log out'),
+                ),
+              ];
+            },
+          )
         ],
       ),
       body: const Text('Hello world'),
@@ -99,7 +103,7 @@ class _NotesViewState extends State<NotesView> {
 }
 
 Future<bool> showLogOutDialog(BuildContext context) {
-  return showDialog(
+  return showDialog<bool>(
     context: context,
     builder: (context) {
       return AlertDialog(
@@ -107,48 +111,19 @@ Future<bool> showLogOutDialog(BuildContext context) {
         content: const Text('Are you sure you want to sign out?'),
         actions: [
           TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(false);
-              },
-              child: const Text('Cancel')),
+            onPressed: () {
+              Navigator.of(context).pop(false);
+            },
+            child: const Text('Cancel'),
+          ),
           TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(true);
-              },
-              child: const Text('Log out')),
+            onPressed: () {
+              Navigator.of(context).pop(true);
+            },
+            child: const Text('Log out'),
+          ),
         ],
       );
     },
   ).then((value) => value ?? false);
-}
-
-void MA_7to50() {
-  //Moving Average
-  //if 7 days moving average break through 50 days moving average
-  // than alert to user!
-  //else keep monitoring
-}
-void MA_15to90() {
-  //Moving Average
-  //if 15 days moving average break through 90 days moving average
-  // than alert to user!
-  //else keep monitoring
-}
-void BB_bt() {
-  //Bollinger Band upper break through
-  //if day off price >= upper band && yesterday MACD << today MACD
-  //than alert to user!
-  //else keep monitoring
-}
-void DI_60() {
-  //60 days Disparity Index
-  //if disparity index < 90
-  //than alert to user!
-  //else keep monitoring
-}
-void MT_bull() {
-  //Momentum trading when market is in a bull
-  //if All moving average is in a bull
-  //than alert to user!
-  //else keep monitoring
 }
