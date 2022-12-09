@@ -262,4 +262,16 @@ class re_info extends StatelessWidget {
     ),
     ),
 
+    SizedBox(height: 10,),
+    TextField(
+    decoration: InputDecoration(
+    labelText: '연락처',
+    border: OutlineInputBorder(),
+    ),
+    )
+    ],
+    ),
+    )
+    ),
+
 
