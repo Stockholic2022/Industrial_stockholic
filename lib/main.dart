@@ -294,4 +294,14 @@ class re_info extends StatelessWidget {
 
     },
     child: Text('저장'),
+    style: ElevatedButton.styleFrom(
+    primary: const Color(0x57DA6532),
+    shape: RoundedRectangleBorder(
+    // shape : 버튼의 모양을 디자인 하는 기능
 
+    borderRadius: BorderRadius.circular(10.0)
+    ),
+    minimumSize: Size(350,50),
+
+    ),
+    ),
