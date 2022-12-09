@@ -52,3 +52,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'sincheol-flutter-project1.appspot.com',
     measurementId: 'G-Z69GF6QNB2',
   );
+  static const FirebaseOptions android = FirebaseOptions(
+  apiKey: 'AIzaSyA1aZXWiF9lHY4hlcxhEnlb5AIEQNmlQhI',
+  appId: '1:267790795234:android:459bd4198f058509ddb9bb',
+  messagingSenderId: '267790795234',
