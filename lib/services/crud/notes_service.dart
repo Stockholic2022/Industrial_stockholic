@@ -84,3 +84,6 @@ class NotesService {
     );
 
     if (notes.isEmpty) {
+      throw CouldNotFindNote();
+    } else {
+      final note = DatabaseNote.fromRow(notes.first);
