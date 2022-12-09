@@ -134,3 +134,19 @@ class MyPage extends StatelessWidget {
     );
   }
 }
+class LoginPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+        resizeToAvoidBottomInset : false,
+        body : Column(
+        children: <Widget>[
+        SizedBox(height: 100,),
+    Center(
+    child:Container(
+    color : Colors.black,
+    width : 350,
+    height : 1,
+    margin: EdgeInsets.only(top:20,bottom: 20),
+    ),
+    ),
