@@ -125,3 +125,8 @@ class NotesService {
 
     //make user owner exists in the db with the correct id
     final dbUser = await getUser(email: owner.email);
+    if (dbUser != owner) {
+      throw CouldNotFindUser();
+    }
+
+    const text = '';
