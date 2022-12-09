@@ -288,3 +288,6 @@ class DatabaseNote {
   DatabaseNote.fromRow(Map<String, Object?> map)
       : id = map[idColumn] as int,
         userId = map[userIdColumn] as int,
+        text = map[textColumn] as String,
+        isSyncedWithCloud =
+            (map[isSyncedWithCloudColumn] as int) == 1 ? true : false;
