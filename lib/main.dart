@@ -283,4 +283,15 @@ class re_info extends StatelessWidget {
     ),
 
     ),
+        SizedBox(height: 20,),
+
+        ElevatedButton(
+        onPressed: (){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => MyPage()
+          )
+      );
+
+    },
+    child: Text('저장'),
 
