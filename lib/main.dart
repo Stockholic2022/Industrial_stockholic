@@ -26,3 +26,11 @@ class MyPage extends StatelessWidget {
         resizeToAvoidBottomInset : false,
         body : Column(
         children: <Widget>[
+
+
+        SizedBox(height: 60,),
+
+    Center(
+    child: Text("마이페이지",style:TextStyle(fontSize: 25,color: Colors.black),),
+    ),
+    SizedBox(height: 90,),
