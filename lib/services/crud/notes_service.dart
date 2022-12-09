@@ -43,3 +43,10 @@ class NotesService {
     required String text,
   }) async {
     await _ensureDbIsOpen();
+    final db = _getDatabaseOrThrow();
+
+    //make sure note exists
+    await getNote(id: note.id);
+
+    //udate DB
+    final updatesCount = await db.update(noteTable, {
