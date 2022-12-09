@@ -174,3 +174,7 @@ class NotesService {
     final results = await db.query(
       userTable,
       limit: 1,
+      where: 'email = ?',
+      whereArgs: [email.toLowerCase()],
+    );
+    if (results.isNotEmpty) {
