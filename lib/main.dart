@@ -161,3 +161,16 @@ class LoginPage extends StatelessWidget{
     labelText: 'id',
     border: OutlineInputBorder(),
     ),
+    ),
+    SizedBox(height: 10,),
+    TextField(
+    decoration: InputDecoration(
+    labelText: 'password',
+    border: OutlineInputBorder(),
+    ),
+    obscureText: true,
+    )
+    ],
+    ),
+    )
+    ),
