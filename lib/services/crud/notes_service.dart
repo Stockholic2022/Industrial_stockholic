@@ -167,3 +167,7 @@ class NotesService {
       return DatabaseUser.fromRow(results.first);
     }
   }
+
+  Future<DatabaseUser> createUser({required String email}) async {
+    await _ensureDbIsOpen();
+    final db = _getDatabaseOrThrow();
