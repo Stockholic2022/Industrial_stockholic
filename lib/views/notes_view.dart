@@ -74,3 +74,14 @@ class _NotesViewState extends State<NotesView> {
                   }
                 }),
               );
+            default:
+              return CircularProgressIndicator();
+          }
+        },
+      ),
+    );
+  }
+}
+
+Future<bool> showLogOutDialog(BuildContext context) {
+  return showDialog<bool>(
