@@ -50,3 +50,8 @@ class NotesService {
 
     //udate DB
     final updatesCount = await db.update(noteTable, {
+      textColumn: text,
+      isSyncedWithCloudColumn: 0,
+    });
+
+    if (updatesCount == 0) {
