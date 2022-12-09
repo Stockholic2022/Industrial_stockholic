@@ -77,3 +77,12 @@ class MyPage extends StatelessWidget {
       print('수익률 확인');
     },
     child: Text('수익률 확인'),
+    //ElevatedButton 은 backgroundColor 속성이 없다.
+    //ElevatedButton 에서는 primary 속성이 배경색을 담당한다.
+    style: ElevatedButton.styleFrom(
+    primary: Colors.grey,
+
+    minimumSize: Size(350,30),
+
+    ),
+    ),
