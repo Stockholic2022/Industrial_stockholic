@@ -80,3 +80,12 @@ class RegisterView extends StatefulWidget {
   'This is an invalid email address',
   );
   }
+  on GenericAuthException {
+  await showErrorDialog(
+  context,
+  'Failed to register',
+  );
+  }
+  },
+  child: const Text('Register'),
+  ),
