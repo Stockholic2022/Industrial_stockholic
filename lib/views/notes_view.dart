@@ -34,3 +34,6 @@ class _NotesViewState extends State<NotesView> {
         title: const Text('Main UI'),
     actions: [
     PopupMenuButton<MenuAction>(
+    onSelected: (value) async {
+    switch (value) {
+    case MenuAction.logout:
