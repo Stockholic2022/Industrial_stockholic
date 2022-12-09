@@ -42,3 +42,7 @@ class DefaultFirebaseOptions {
         );
     }
   }
+  static const FirebaseOptions web = FirebaseOptions(
+  apiKey: 'AIzaSyBBm8BYw-AHNUCkTskIrIKROSgsSmi8aWY',
+  appId: '1:267790795234:web:c3edefcc21f31f68ddb9bb',
+  messagingSenderId: '267790795234',
