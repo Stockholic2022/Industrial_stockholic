@@ -275,3 +275,8 @@ class DatabaseUser {
 class DatabaseNote {
   final int id;
   final int userId;
+  final String text;
+  final bool isSyncedWithCloud;
+
+  DatabaseNote({
+    required this.id,
