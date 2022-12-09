@@ -13,3 +13,9 @@ class FirebaseAuthProvider implements AuthProvider {
       options: DefaultFirebaseOptions.currentPlatform,
     );
   }
+
+  @override
+  Future<AuthUser> createUser({
+    required String email,
+    required String password,
+  }) async
