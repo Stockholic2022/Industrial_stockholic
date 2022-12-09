@@ -73,3 +73,6 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions macos = FirebaseOptions(
   apiKey: 'AIzaSyD0tCG4rmlRmAYF2a3jSLMVGongu8RQCsI',
   appId: '1:267790795234:ios:ec6c19cc40860d62ddb9bb',
+  messagingSenderId: '267790795234',
+  projectId: 'sincheol-flutter-project1',
+  databaseURL: 'https://sincheol-flutter-project1-default-rtdb.asia-southeast1.firebasedatabase.app',
