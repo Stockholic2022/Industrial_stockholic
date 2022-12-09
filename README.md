@@ -35,6 +35,13 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # 사용방법
+- login이 필요한 서비스 => 가입이필요
+- register에서 사용할 이메일, 비밀번호 작성
+- 이후 email verification 창으로
+- email을 확인해 인증되면
+- login 가능
+- 인증 전에는 불가능
+
 
 # 라이선스
 - 신인철 email:ohmong0803@gmail.com
