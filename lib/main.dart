@@ -40,3 +40,12 @@ class MyPage extends StatelessWidget {
     child: Text("이원찬님, 안녕하세요.",style:TextStyle(fontSize: 15,color: Colors.black),),
     )
     ),
+        SizedBox(height: 100,),
+        ElevatedButton(
+        onPressed: (){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => re_info()
+          )
+      );
+    },
+    child: Text('내 정보 수정'),
