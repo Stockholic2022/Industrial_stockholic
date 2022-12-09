@@ -21,3 +21,9 @@ class RegisterView extends StatefulWidget {
   _password = TextEditingController();
   super.initState();
   }
+  @override
+  void dispose() {
+  _email.dispose();
+  _password.dispose();
+  super.dispose();
+  }
