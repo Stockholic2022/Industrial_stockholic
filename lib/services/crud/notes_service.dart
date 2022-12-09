@@ -197,3 +197,9 @@ class NotesService {
     final deletedCount = await db.delete(
       userTable,
       where: 'email = ?',
+      whereArgs: [email.toLowerCase()],
+    );
+    if (deletedCount != 1) {
+      throw CouldNotDeleteUser();
+    }
+  }
