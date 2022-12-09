@@ -74,3 +74,9 @@ class RegisterView extends StatefulWidget {
   context,
   'Email is already in use',
   );
+  } on InvalidEmailAuthException {
+  await showErrorDialog(
+  context,
+  'This is an invalid email address',
+  );
+  }
