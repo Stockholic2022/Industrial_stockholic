@@ -34,3 +34,9 @@ class MyPage extends StatelessWidget {
     child: Text("마이페이지",style:TextStyle(fontSize: 25,color: Colors.black),),
     ),
     SizedBox(height: 90,),
+    Center(
+    child:Container(
+    margin: EdgeInsets.only(top:5,bottom: 0),
+    child: Text("이원찬님, 안녕하세요.",style:TextStyle(fontSize: 15,color: Colors.black),),
+    )
+    ),
