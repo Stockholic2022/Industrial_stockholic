@@ -190,3 +190,7 @@ class NotesService {
       email: email,
     );
   }
+
+  Future<void> deleteUser({required String email}) async {
+    await _ensureDbIsOpen();
+    final db = _getDatabaseOrThrow();
