@@ -70,3 +70,6 @@ class DefaultFirebaseOptions {
     iosClientId: '267790795234-p1bauj4gtueeqq9pd6hu0tlmh1tb0q99.apps.googleusercontent.com',
     iosBundleId: 'com.example.learningdart',
   );
+  static const FirebaseOptions macos = FirebaseOptions(
+  apiKey: 'AIzaSyD0tCG4rmlRmAYF2a3jSLMVGongu8RQCsI',
+  appId: '1:267790795234:ios:ec6c19cc40860d62ddb9bb',
