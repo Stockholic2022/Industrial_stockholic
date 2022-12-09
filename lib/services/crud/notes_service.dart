@@ -31,3 +31,7 @@ class NotesService {
       rethrow;
     }
   }
+
+  Future<void> _cacheNotes() async {
+    final allNotes = await getAllNotes();
+    _notes = allNotes.toList();
