@@ -26,3 +26,8 @@ class NotesService {
       return user;
     } on CouldNotFindUser {
       final createdUser = await createUser(email: email);
+      return createdUser;
+    } catch (e) {
+      rethrow;
+    }
+  }
