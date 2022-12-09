@@ -28,3 +28,8 @@ class AuthService implements AuthProvider {
   }) =>
       provider.logIn(
         email: email,
+        password: password,
+      );
+
+  @override
+  Future<void> logOut() => provider.logOut();
