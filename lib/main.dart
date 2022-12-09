@@ -197,3 +197,25 @@ class LoginPage extends StatelessWidget{
 
     ),
     ),
+          Center(
+            child:Container(
+              color : Colors.black,
+              width : 350,
+              height : 1,
+              margin: EdgeInsets.only(top:20,bottom: 0),
+            ),
+          ),
+          SizedBox(height: 240,),
+          Center(
+            child:Container(
+              child: Text("Stockholic",style:TextStyle(fontSize: 15,color: Colors.black),),
+              // margin: EdgeInsets.all(120),
+            ),
+          ),
+
+
+        ]
+        )
+    );
+  }
+}
