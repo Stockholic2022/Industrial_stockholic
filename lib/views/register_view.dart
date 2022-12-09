@@ -52,3 +52,12 @@ class RegisterView extends StatefulWidget {
   hintText: 'Enter your password here',
   ),
   ),
+  TextButton(
+  onPressed: () async {
+  final email = _email.text;
+  final password = _password.text;
+  try {
+  await AuthService.firebase().createUser(
+  email: email,
+  password: password,
+  );
