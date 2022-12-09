@@ -171,3 +171,6 @@ class NotesService {
   Future<DatabaseUser> createUser({required String email}) async {
     await _ensureDbIsOpen();
     final db = _getDatabaseOrThrow();
+    final results = await db.query(
+      userTable,
+      limit: 1,
