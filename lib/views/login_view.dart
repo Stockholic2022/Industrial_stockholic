@@ -59,3 +59,7 @@ class _LoginViewState extends State<LoginView> {
     ),
         TextButton(
         onPressed: () async {
+      final email = _email.text;
+      final password = _password.text;
+      try {
+        await AuthService.firebase().logIn(
