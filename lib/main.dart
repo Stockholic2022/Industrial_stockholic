@@ -229,3 +229,19 @@ class re_info extends StatelessWidget {
         children: <Widget>[
 
         SizedBox(height: 60,),
+    Center(
+    child: Text("회원정보 수정",style:TextStyle(fontSize: 25,color: Colors.black),),
+    ),
+
+    SizedBox(height: 50,),
+
+    Center(
+    child: Container(
+    padding: EdgeInsets.all(30.0),  //패딩을 줘서 좌우 간격을 띄운다.
+    child: Column(
+    children: <Widget>[
+    TextField(
+    decoration: InputDecoration(
+    labelText: 'E-MAIL',
+    border: OutlineInputBorder(),
+    ),
