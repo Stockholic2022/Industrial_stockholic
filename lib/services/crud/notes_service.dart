@@ -219,3 +219,9 @@ class NotesService {
       throw DatabaseIsNotOpen();
     } else {
       await db.close();
+      _db = null;
+    }
+  }
+
+  Future<void> _ensureDbIsOpen() async {
+    try {
