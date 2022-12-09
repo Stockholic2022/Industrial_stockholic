@@ -37,3 +37,6 @@ class _NotesViewState extends State<NotesView> {
     onSelected: (value) async {
     switch (value) {
     case MenuAction.logout:
+    final shouldLogout = await showLogOutDialog(context);
+    if (shouldLogout) {
+    await AuthService.firebase().logOut();
