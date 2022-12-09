@@ -9,4 +9,8 @@ class RegisterView extends StatefulWidget {
 
   @override
   _RegisterViewState createState() => _RegisterViewState();
+
+  class _RegisterViewState extends State<RegisterView> {
+  late final TextEditingController _email;
+  late final TextEditingController _password;
 }
