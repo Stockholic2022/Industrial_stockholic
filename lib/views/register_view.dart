@@ -27,3 +27,8 @@ class RegisterView extends StatefulWidget {
   _password.dispose();
   super.dispose();
   }
+  Widget build(BuildContext context) {
+  return Scaffold(
+  appBar: AppBar(
+  title: const Text('Register'),
+  ),
