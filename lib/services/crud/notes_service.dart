@@ -178,3 +178,9 @@ class NotesService {
       whereArgs: [email.toLowerCase()],
     );
     if (results.isNotEmpty) {
+      throw UserAlreadyExitsts();
+    }
+
+    final userId = await db.insert(userTable, {
+      emailColumn: email.toLowerCase(),
+    });
