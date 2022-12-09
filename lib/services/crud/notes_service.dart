@@ -162,3 +162,8 @@ class NotesService {
     );
 
     if (results.isEmpty) {
+      throw CouldNotFindUser();
+    } else {
+      return DatabaseUser.fromRow(results.first);
+    }
+  }
