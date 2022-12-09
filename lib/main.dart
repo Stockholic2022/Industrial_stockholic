@@ -108,3 +108,29 @@ class MyPage extends StatelessWidget {
 
     },
     child: Text('로그아웃'),
+          //ElevatedButton 은 backgroundColor 속성이 없다.
+          //ElevatedButton 에서는 primary 속성이 배경색을 담당한다.
+          style: ElevatedButton.styleFrom(
+            primary: Colors.green,
+            shape: RoundedRectangleBorder(
+              // shape : 버튼의 모양을 디자인 하는 기능
+
+                borderRadius: BorderRadius.circular(10.0)
+            ),
+            minimumSize: Size(350,50),
+
+          ),
+        ),
+
+
+          SizedBox(height: 60,),
+          Center(
+            child: Text("Stockholic",style:TextStyle(fontSize: 15,color: Colors.black),),
+          ),
+
+
+        ]
+        ),
+    );
+  }
+}
