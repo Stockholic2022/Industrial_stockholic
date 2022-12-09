@@ -183,3 +183,17 @@ class LoginPage extends StatelessWidget{
 
     },
     child: Text('로그인'),
+
+    //ElevatedButton 은 backgroundColor 속성이 없다.
+    //ElevatedButton 에서는 primary 속성이 배경색을 담당한다.
+    style: ElevatedButton.styleFrom(
+    primary: const Color(0x6CC633D0),
+    shape: RoundedRectangleBorder(
+    // shape : 버튼의 모양을 디자인 하는 기능
+
+    borderRadius: BorderRadius.circular(10.0)
+    ),
+    minimumSize: Size(350,50),
+
+    ),
+    ),
