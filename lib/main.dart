@@ -245,3 +245,21 @@ class re_info extends StatelessWidget {
     labelText: 'E-MAIL',
     border: OutlineInputBorder(),
     ),
+    ),
+    SizedBox(height: 10,),
+    TextField(
+    decoration: InputDecoration(
+    labelText: 'password',
+    border: OutlineInputBorder(),
+    ),
+    obscureText: true,
+    ),
+    SizedBox(height: 10,),
+    TextField(
+    decoration: InputDecoration(
+    labelText: '생년월일',
+    border: OutlineInputBorder(),
+    ),
+    ),
+
+
