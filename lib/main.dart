@@ -86,3 +86,14 @@ class MyPage extends StatelessWidget {
 
     ),
     ),
+
+    Center(
+    child:Container(
+    color : Colors.grey,
+    width : 350,
+    height : 1,
+    margin: EdgeInsets.only(top:20,bottom: 0),
+
+    ),
+
+    ),
