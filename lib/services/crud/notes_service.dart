@@ -112,3 +112,6 @@ class NotesService {
       whereArgs: [id],
     );
     if (deletedCount == 0) {
+      throw CouldNotDeleteNote();
+    } else {
+      _notes.removeWhere((note) => note.id == id);
