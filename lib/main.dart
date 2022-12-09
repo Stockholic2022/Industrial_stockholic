@@ -150,3 +150,14 @@ class LoginPage extends StatelessWidget{
     margin: EdgeInsets.only(top:20,bottom: 20),
     ),
     ),
+
+    Center(
+    child: Container(
+    padding: EdgeInsets.all(30.0),  //패딩을 줘서 좌우 간격을 띄운다.
+    child: Column(
+    children: <Widget>[
+    TextField(
+    decoration: InputDecoration(
+    labelText: 'id',
+    border: OutlineInputBorder(),
+    ),
