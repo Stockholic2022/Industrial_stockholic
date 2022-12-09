@@ -58,3 +58,8 @@ class MyPage extends StatelessWidget {
 
     ),
     ),
+        ElevatedButton(
+        onPressed: (){
+      print('실시간 주가');
+    },
+    child: Text('실시간 주가'),
