@@ -72,3 +72,8 @@ class MyPage extends StatelessWidget {
 
     ),
     ),
+        ElevatedButton(
+        onPressed: (){
+      print('수익률 확인');
+    },
+    child: Text('수익률 확인'),
