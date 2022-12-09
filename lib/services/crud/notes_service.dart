@@ -72,3 +72,7 @@ class NotesService {
 
     return notes.map((noteRow) => DatabaseNote.fromRow(noteRow));
   }
+
+  Future<DatabaseNote> getNote({required int id}) async {
+    await _ensureDbIsOpen();
+    final db = _getDatabaseOrThrow();
