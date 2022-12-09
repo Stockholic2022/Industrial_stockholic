@@ -61,3 +61,10 @@ class RegisterView extends StatefulWidget {
   email: email,
   password: password,
   );
+  AuthService.firebase().sendEmailVerification();
+  Navigator.of(context).pushNamed(verifyEmailRoute);
+  } on WeakPasswordAuthException {
+  await showErrorDialog(
+  context,
+  'Weak password',
+  );
