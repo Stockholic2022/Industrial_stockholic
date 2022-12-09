@@ -305,3 +305,14 @@ class re_info extends StatelessWidget {
 
     ),
     ),
+          SizedBox(height: 20,),
+          Center(
+            child: Text("Stockholic",style:TextStyle(fontSize: 15,color: Colors.black),),
+          ),
+
+
+        ]
+        ),
+    );
+  }
+}
