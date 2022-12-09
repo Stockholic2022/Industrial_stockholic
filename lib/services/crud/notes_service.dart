@@ -130,3 +130,7 @@ class NotesService {
     }
 
     const text = '';
+    //create the note
+    final noteId = await db.insert(noteTable, {
+      userIdColumn: owner.id,
+      textColumn: text,
