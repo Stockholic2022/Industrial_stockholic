@@ -97,3 +97,14 @@ class MyPage extends StatelessWidget {
     ),
 
     ),
+        SizedBox(height: 20,),
+
+        ElevatedButton(
+        onPressed: (){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => LoginPage()
+          )
+      );
+
+    },
+    child: Text('로그아웃'),
