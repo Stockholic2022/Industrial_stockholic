@@ -234,3 +234,6 @@ class NotesService {
       throw DatabaseAlreadyOpenException();
     }
     try {
+      final docsPath = await getApplicationDocumentsDirectory();
+      final dbPath = join(docsPath.path, dbName);
+      final db = await openDatabase(dbPath);
