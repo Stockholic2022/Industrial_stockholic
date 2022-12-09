@@ -216,3 +216,6 @@ class NotesService {
   Future<void> close() async {
     final db = _db;
     if (db == null) {
+      throw DatabaseIsNotOpen();
+    } else {
+      await db.close();
