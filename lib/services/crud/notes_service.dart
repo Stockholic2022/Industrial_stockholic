@@ -134,3 +134,8 @@ class NotesService {
     final noteId = await db.insert(noteTable, {
       userIdColumn: owner.id,
       textColumn: text,
+      isSyncedWithCloudColumn: 1,
+    });
+
+    final note = DatabaseNote(
+      id: noteId,
