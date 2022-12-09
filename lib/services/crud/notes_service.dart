@@ -10,7 +10,7 @@ class NotesService {
   Database? _db;
 
   List<DatabaseNote> _notes = [];
-  
+
   static final NotesService _shared = NotesService._sharedInstance();
   NotesService._sharedInstance();
   factory NotesService() => _shared;
@@ -19,3 +19,10 @@ class NotesService {
       StreamController<List<DatabaseNote>>.broadcast();
 
   Stream<List<DatabaseNote>> get allNotes => _notesStreamController.stream;
+
+  Future<DatabaseUser> getOrCreateUser({required String email}) async {
+    try {
+      final user = await getUser(email: email);
+      return user;
+    } on CouldNotFindUser {
+      final createdUser = await createUser(email: email);
