@@ -68,3 +68,9 @@ class RegisterView extends StatefulWidget {
   context,
   'Weak password',
   );
+  }
+  on EmailAlreadyInUseAuthException {
+  await showErrorDialog(
+  context,
+  'Email is already in use',
+  );
