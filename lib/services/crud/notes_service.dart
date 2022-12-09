@@ -253,3 +253,7 @@ class NotesService {
 class DatabaseUser {
   final int id;
   final String email;
+  const DatabaseUser({
+    required this.id,
+    required this.email,
+  });
