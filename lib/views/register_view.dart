@@ -89,3 +89,17 @@ class RegisterView extends StatefulWidget {
   },
   child: const Text('Register'),
   ),
+  TextButton(
+  onPressed: () {
+  Navigator.of(context).pushNamedAndRemoveUntil(
+  loginRoute,
+  (route) => false,
+  );
+  },
+  child: const Text('Already registered? Login here!'),
+  )
+  ],
+  ),
+  );
+  }
+}
