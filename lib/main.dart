@@ -219,3 +219,13 @@ class LoginPage extends StatelessWidget{
     );
   }
 }
+
+class re_info extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        resizeToAvoidBottomInset : false,
+        body : Column(
+        children: <Widget>[
+
+        SizedBox(height: 60,),
