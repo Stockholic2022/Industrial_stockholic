@@ -291,3 +291,10 @@ class DatabaseNote {
         text = map[textColumn] as String,
         isSyncedWithCloud =
             (map[isSyncedWithCloudColumn] as int) == 1 ? true : false;
+
+  @override
+  String toString() =>
+      'Note, ID = $id, userId = $userId, isSyncedWithCloud = $isSyncedWithCloud, text = $text';
+
+  @override
+  bool operator ==(covariant DatabaseUser other) => id == other.id;
