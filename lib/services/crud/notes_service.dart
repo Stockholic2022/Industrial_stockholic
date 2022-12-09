@@ -271,3 +271,7 @@ class DatabaseUser {
   @override
   int get hashCode => id.hashCode;
 }
+
+class DatabaseNote {
+  final int id;
+  final int userId;
