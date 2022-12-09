@@ -212,3 +212,7 @@ class NotesService {
       return db;
     }
   }
+
+  Future<void> close() async {
+    final db = _db;
+    if (db == null) {
