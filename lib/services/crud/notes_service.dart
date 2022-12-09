@@ -149,3 +149,7 @@ class NotesService {
 
     return note;
   }
+
+  Future<DatabaseUser> getUser({required String email}) async {
+    await _ensureDbIsOpen();
+    final db = _getDatabaseOrThrow();
