@@ -79,3 +79,8 @@ class NotesService {
     final notes = await db.query(
       noteTable,
       limit: 1,
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+
+    if (notes.isEmpty) {
