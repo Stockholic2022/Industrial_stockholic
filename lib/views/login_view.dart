@@ -28,3 +28,8 @@ class _LoginViewState extends State<LoginView> {
   void dispose() {
     _email.dispose();
     _password.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
