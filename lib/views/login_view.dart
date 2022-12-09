@@ -88,3 +88,10 @@ class _LoginViewState extends State<LoginView> {
             context,
             'Wrong credentials',
         );
+      } on GenericAuthException {
+        await showErrorDialog(
+            context,
+            'Authentication error',
+        );
+      }
+    },
