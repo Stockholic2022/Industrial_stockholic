@@ -46,3 +46,9 @@ class DefaultFirebaseOptions {
   apiKey: 'AIzaSyBBm8BYw-AHNUCkTskIrIKROSgsSmi8aWY',
   appId: '1:267790795234:web:c3edefcc21f31f68ddb9bb',
   messagingSenderId: '267790795234',
+    projectId: 'sincheol-flutter-project1',
+    authDomain: 'sincheol-flutter-project1.firebaseapp.com',
+    databaseURL: 'https://sincheol-flutter-project1-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'sincheol-flutter-project1.appspot.com',
+    measurementId: 'G-Z69GF6QNB2',
+  );
