@@ -14,3 +14,10 @@ class RegisterView extends StatefulWidget {
   late final TextEditingController _email;
   late final TextEditingController _password;
 }
+
+  @override
+  void initState() {
+  _email = TextEditingController();
+  _password = TextEditingController();
+  super.initState();
+  }
