@@ -248,3 +248,8 @@ class NotesService {
     }
   }
 }
+
+@immutable
+class DatabaseUser {
+  final int id;
+  final String email;
