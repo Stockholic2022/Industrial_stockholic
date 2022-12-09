@@ -2,21 +2,6 @@
 <project version="4">
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="acea6cd4-1e8c-49c8-b344-0e56274a6dba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningdart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learningdart.iml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="2Igg4rzJUF8vM8jW4TM6F1pzodW" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
@@ -40,11 +25,6 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="acea6cd4-1e8c-49c8-b344-0e56274a6dba" name="Changes" comment="" />
-      <created>1670608457884</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1670608457884</updated>
     </task>
     <servers />
   </component>
