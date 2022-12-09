@@ -139,3 +139,7 @@ class NotesService {
 
     final note = DatabaseNote(
       id: noteId,
+      userId: owner.id,
+      text: text,
+      isSyncedWithCloud: true,
+    );
