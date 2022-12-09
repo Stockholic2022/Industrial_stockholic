@@ -207,3 +207,8 @@ class NotesService {
   Database _getDatabaseOrThrow() {
     final db = _db;
     if (db == null) {
+      throw DatabaseIsNotOpen();
+    } else {
+      return db;
+    }
+  }
