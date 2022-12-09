@@ -70,3 +70,8 @@ class _LoginViewState extends State<LoginView> {
         if (user?.isEmailVerified ?? false) {
           Navigator.of(context).pushNamedAndRemoveUntil(
               notesRoute,
+                (route) => false,
+          );
+        } else {
+          Navigator.of(context).pushNamedAndRemoveUntil(
+              verifyEmailRoute,
