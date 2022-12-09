@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a2c8ad1-bac1-4571-855c-b5ad5905d7ef" name="Changes" comment="" />
+    <list default="true" id="5a2c8ad1-bac1-4571-855c-b5ad5905d7ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/views/notes_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/notes_view.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
