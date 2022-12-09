@@ -5,3 +5,8 @@ import 'package:learningdart/services/auth/auth_service.dart';
 import 'package:learningdart/services/crud/notes_service.dart';
 
 class NotesView extends StatefulWidget {
+  const NotesView({Key? key}) : super(key: key);
+
+  @override
+  _NotesViewState createState() => _NotesViewState();
+}
