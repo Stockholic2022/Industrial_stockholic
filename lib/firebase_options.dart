@@ -76,3 +76,8 @@ class DefaultFirebaseOptions {
   messagingSenderId: '267790795234',
   projectId: 'sincheol-flutter-project1',
   databaseURL: 'https://sincheol-flutter-project1-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'sincheol-flutter-project1.appspot.com',
+    iosClientId: '267790795234-p1bauj4gtueeqq9pd6hu0tlmh1tb0q99.apps.googleusercontent.com',
+    iosBundleId: 'com.example.learningdart',
+  );
+}
