@@ -24,3 +24,7 @@ class AuthService implements AuthProvider {
   @override
   Future<AuthUser> logIn({
     required String email,
+    required String password,
+  }) =>
+      provider.logIn(
+        email: email,
