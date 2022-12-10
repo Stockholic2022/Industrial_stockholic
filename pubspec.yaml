@@ -29,6 +29,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  url_launcher: ^6.1.7
+  web_scraper: ^0.1.4
   flutter:
     sdk: flutter
 
@@ -43,6 +45,8 @@ dependencies:
   sqflite: ^2.2.2
   path_provider: ^2.0.11
   path: ^1.8.2
+  url_launcher: ^6.1.7
+  web_scraper: ^0.1.4
 
 dev_dependencies:
   flutter_test:
